@@ -34,9 +34,19 @@ main table td {
   padding: 5px;
 }
 
-main table a {
+main a {
   text-decoration: none;
   font-weight: 600;
   color: cornflowerblue;
+}
+
+table {
+  padding: 10px;
+}
+
+table th,
+table td {
+  border: 1px solid black;
+  padding: 5px;
 }
 

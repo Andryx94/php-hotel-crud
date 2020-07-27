@@ -1,16 +1,9 @@
 main {
-  table {
-    padding: 10px;
+  @include tabella;
 
-    th, td {
-      border: 1px solid black;
-      padding: 5px;
-    }
-
-    a{
-      text-decoration: none;
-      font-weight: 600;
-      color: cornflowerblue;
-    }
+  a{
+    text-decoration: none;
+    font-weight: 600;
+    color: cornflowerblue;
   }
 }

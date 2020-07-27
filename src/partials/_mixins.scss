@@ -1,0 +1,10 @@
+@mixin tabella {
+  table {
+    padding: 10px;
+
+    th, td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+  }
+}

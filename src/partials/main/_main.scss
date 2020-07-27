@@ -1,6 +1,16 @@
 main {
-  th, td {
-    border: 1px solid black;
-    padding: 5px;
+  table {
+    padding: 10px;
+
+    th, td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+
+    a{
+      text-decoration: none;
+      font-weight: 600;
+      color: cornflowerblue;
+    }
   }
 }

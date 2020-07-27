@@ -15,21 +15,21 @@
   $sql = "SELECT * FROM `stanze`";
 
   $result = $conn->query($sql);
-  var_dump($result);
+  $rooms = [];
 
   if ($result && $result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-      echo "Stanza N. ". $row['room_number']. " piano: ".$row['floor'];
+      $rooms[] = $row;
     }
   }
 
   elseif ($result) {
-    echo "0 results";
+    $rooms = [];
   }
 
   else {
-    echo "query error";
+    $rooms = [];
   }
 
   $conn->close();

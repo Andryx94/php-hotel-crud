@@ -7,22 +7,18 @@
 <main>
   <table>
     <thead>
-      <th>Elemento1</th>
-      <th>Elemento2</th>
-      <th>Elemento3</th>
+      <th>ID</th>
+      <th>Numero Stanza</th>
+      <th>Piano</th>
     </thead>
 
-    <tbody>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td><a href=" <?php echo $basepath . "/src/partials/view/view.php" ?> ">View</a></td>
-    </tbody>
-
-    <tbody>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-    </tbody>
+    <?php foreach ($rooms as $room) { ?>
+      <tbody>
+        <td><?php echo $room["id"] ?></td>
+        <td><?php echo $room["room_number"] ?></td>
+        <td><?php echo $room["floor"] ?></td>
+        <td><a href=" <?php echo $basepath . "/src/partials/view/view.php" ?> ">View</a></td>
+      </tbody>
+    <?php } ?>
   </table>
 </main>
